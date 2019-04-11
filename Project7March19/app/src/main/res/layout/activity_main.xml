@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg_cake">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="417dp">
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="Emailaddress"
+            android:inputType="textEmailAddress"
+            android:layout_gravity="center_horizontal" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:layout_gravity="center_horizontal"/>
+
+        <EditText
+            android:id="@+id/editTextPassword2"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="Confirm password"
+            android:inputType="textPassword"
+            android:layout_gravity="center_horizontal"/>
+
+        <Button
+            android:id="@+id/btnSignup"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/btn_signup_style"
+            android:text="Sign up"
+            android:layout_gravity="center_horizontal"/>
+
+
+        <TextView
+            android:id="@+id/textViewSignin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Already Registered? Sign in here"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

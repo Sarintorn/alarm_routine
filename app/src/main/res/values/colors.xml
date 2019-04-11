@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#BDDCEE</color>
+    <color name="colorPrimaryDark">#292929</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorBtnSignup">#FF94C3</color>
+    <color name="colorText">#292929</color>
+
+    <color name="fab_pressed">#546e7a</color>
+</resources>

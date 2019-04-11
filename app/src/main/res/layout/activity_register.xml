@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:background="@drawable/bg">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"
+        app:logo="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/imgUserPhoto"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/userimg"
+        app:layout_constraintBottom_toTopOf="@+id/editTextEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/reg_edittext_style"
+        android:ems="10"
+        android:hint="อีเมล"
+        android:textColor="@color/colorText"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgUserPhoto" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/reg_edittext_style"
+        android:ems="10"
+        android:hint="รหัสผ่าน"
+        android:textColor="@color/colorText"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/editTextConfirmPassword"
+        app:layout_constraintEnd_toEndOf="@+id/editTextEmail"
+        app:layout_constraintStart_toStartOf="@+id/editTextEmail"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
+
+    <EditText
+        android:id="@+id/editTextConfirmPassword"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/reg_edittext_style"
+        android:ems="10"
+        android:hint="ยืนยันรหัสผ่าน"
+        android:textColor="@color/colorText"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/editTextFname"
+        app:layout_constraintEnd_toEndOf="@+id/editTextPassword"
+        app:layout_constraintStart_toStartOf="@+id/editTextPassword"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
+
+    <EditText
+        android:id="@+id/editTextFname"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/reg_edittext_style"
+        android:ems="10"
+        android:hint="ชื่อ-นามสกุล"
+        android:textColor="@color/colorText"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/editTextUsername"
+        app:layout_constraintEnd_toEndOf="@+id/editTextConfirmPassword"
+        app:layout_constraintStart_toStartOf="@+id/editTextConfirmPassword"
+        app:layout_constraintTop_toBottomOf="@+id/editTextConfirmPassword" />
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/reg_edittext_style"
+        android:ems="10"
+        android:hint="ชื่อผู้ใช้"
+        android:textColor="@color/colorText"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btnSignup"
+        app:layout_constraintEnd_toEndOf="@+id/editTextFname"
+        app:layout_constraintStart_toStartOf="@+id/editTextFname"
+        app:layout_constraintTop_toBottomOf="@+id/editTextFname" />
+
+    <Button
+        android:id="@+id/btnSignup"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/btn_signup_style"
+        android:text="ลงชื่อเข้าใช้"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/textViewSignin"
+        app:layout_constraintEnd_toEndOf="@+id/editTextUsername"
+        app:layout_constraintStart_toStartOf="@+id/editTextUsername"
+        app:layout_constraintTop_toBottomOf="@+id/editTextUsername" />
+
+    <TextView
+        android:id="@+id/textViewSignin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="มีบัญชีอยู่แล้ว? เข้าสู่ระบบที่นี่"
+        android:textColor="@color/colorText"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/btnSignup"
+        app:layout_constraintStart_toStartOf="@+id/btnSignup"
+        app:layout_constraintTop_toBottomOf="@+id/btnSignup" />
+
+
+    <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="417dp">
+
+        <EditText
+            android:id="@+id/editTextEmail1"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:hint="Emailaddress"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/editTextPassword1"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:layout_gravity="center_horizontal"/>
+
+        <EditText
+            android:id="@+id/editTextConfirmPassword1"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:hint="Confirm password"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/btnSignup1"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:background="@drawable/btn_signup_style"
+            android:text="Sign up" />
+
+
+        <TextView
+            android:id="@+id/textViewSignin1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Already Registered? Sign in here"
+            android:textAlignment="center" />
+
+    </LinearLayout> -->
+
+</android.support.constraint.ConstraintLayout>

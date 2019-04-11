@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@drawable/bg">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"
+        app:logo="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/edt_email_login"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/reg_edittext_style"
+        android:ems="10"
+        android:hint="อีเมล"
+        android:textColor="@color/colorText"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/edt_password_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_password_login"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/reg_edittext_style"
+        android:ems="10"
+        android:hint="รหัสผ่าน"
+        android:textColor="@color/colorText"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/btnSignin"
+        app:layout_constraintEnd_toEndOf="@+id/edt_email_login"
+        app:layout_constraintStart_toStartOf="@+id/edt_email_login"
+        app:layout_constraintTop_toBottomOf="@+id/edt_email_login" />
+
+    <Button
+        android:id="@+id/btnSignin"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/btn_signup_style"
+        android:text="เข้าสู่ระบบ"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/textViewSignup"
+        app:layout_constraintEnd_toEndOf="@+id/edt_password_login"
+        app:layout_constraintStart_toStartOf="@+id/edt_password_login"
+        app:layout_constraintTop_toBottomOf="@+id/edt_password_login" />
+
+    <TextView
+        android:id="@+id/textViewSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="ยังไม่มีบัญชี? ลงทะเบียนที่นี่"
+        android:textColor="@color/colorText"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/btnSignin"
+        app:layout_constraintStart_toStartOf="@+id/btnSignin"
+        app:layout_constraintTop_toBottomOf="@+id/btnSignin" />
+</android.support.constraint.ConstraintLayout>
